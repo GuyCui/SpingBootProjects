@@ -11,6 +11,13 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import java.util.List;
 
+
+/**
+ * 角色实体
+ *
+ * @author CMZ
+ * @date 2022/11/30
+ */
 @Data
 @Entity
 public class SysRole {

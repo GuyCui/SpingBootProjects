@@ -15,8 +15,8 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * @author longzhonghua
- * @data 2019/01/26 22:30
+ * @author CMZ
+ *         权限实体
  */
 @Data
 @Entity

@@ -18,7 +18,7 @@ import java.util.List;
 /**
  * {@code @Author:} CMZ
  * {@code @DateTime:} 2022/11/29 23:46
- * {@code @Description:} ManagementSystem TODO
+ * {@code @Description:} ManagementSystem 用户实体表
  */
 @Entity
 public class SysUser implements UserDetails {
