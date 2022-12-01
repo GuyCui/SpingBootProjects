@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <link href="/css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+    <link href="/css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+
+    <link href="/css/animate.min.css" rel="stylesheet">
+    <link href="/css/style.min862f.css?v=4.1.0" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;ie.html"/>
+    <![endif]-->
+
+    <!-- CSRF -->
+    <meta name="_csrf" th:content="${_csrf.token}"/>
+    <!-- default header name is X-CSRF-TOKEN -->
+    <meta name="_csrf_header" th:content="${_csrf.headerName}"/>
+</head>
+<body class="container">
+
+
+<form class="form-horizontal" method="post" th:action="@{/admin/user/update}">
+    <input name="_method" type="hidden" value="PUT"/>
+    <div class="form-group">
+        <label class="col-sm-2 control-label" for="name">用户名</label>
+        <div class="col-sm-10">
+            <input id="name" name="name" th:field="${adminuser.name}"
+                   type="text"/>
+        </div>
+    </div>
+
+    <input id="id" name="id" th:field="${adminuser.id}" type="hidden"/>
+
+
+    <input th:name="${_csrf.parameterName}" th:value="${_csrf.token}"
+           type="hidden">
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <input class="btn btn-info" type="submit" value="提交"/>
+            &nbsp; &nbsp; &nbsp;
+            <input class="btn btn-info" type="reset" value="重置"/>
+        </div>
+
+    </div>
+</form>
+</body>
+</html>
