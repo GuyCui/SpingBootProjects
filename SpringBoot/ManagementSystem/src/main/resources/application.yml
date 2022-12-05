@@ -29,8 +29,7 @@ spring:
         url-pattern: /*
     password: Cui!2345
     type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql://localhost:3306/ManagementSystemDemo?useSSL=true
-    &characterEncoding=utf-8&serverTimezone=UTC
+    url: jdbc:mysql://82.156.68.175:3306/ManagementSystemDemo?useSSL=true&characterEncoding=utf-8&serverTimezone=UTC
     username: root
   jpa:
     database: mysql
