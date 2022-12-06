@@ -8,7 +8,8 @@ package top.sql.framework;
 public interface ConfigConstant {
     String CONFIG_FILE = "smart.properties";
     
-    String JDBC_DRIVER = "smart.framework.jdbc.url";
+    String JDBC_DRIVER = "smart.framework.jdbc.Driver";
+    String JDBC_URL = "smart.framework.jdbc.url";
     
     String JDBC_USERNAME = "smart.framework.jdbc.username";
     
