@@ -29,7 +29,6 @@ public class Handler {
     public Class<?> getControllerClass() {
         return controllerClass;
     }
-    
     public Method getActionMethod() {
         return actionMethod;
     }
