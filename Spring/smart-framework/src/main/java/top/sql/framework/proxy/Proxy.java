@@ -8,7 +8,6 @@ package top.sql.framework.proxy;
 public interface Proxy {
     /**
      * 执行链式代理
-     * ProxyChan
      */
-    Object doProxy(ProxyChan proxyChan) throws Throwable;
+    Object doProxy(ProxyChain proxyChain) throws Throwable;
 }

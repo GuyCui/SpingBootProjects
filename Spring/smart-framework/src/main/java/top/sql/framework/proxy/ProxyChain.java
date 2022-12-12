@@ -12,7 +12,7 @@ import java.util.List;
  * {@code @DateTime:} 2022/12/12 20:10
  * {@code @Description:} smart-framework 代理链
  */
-public class ProxyChan {
+public class ProxyChain {
     private final Class<?> targetClass;
     private final Object targetObject;
     private final Method targetMethod;
@@ -21,8 +21,9 @@ public class ProxyChan {
     private List<Proxy> proxyList = new ArrayList<>();
     private int proxyIndex = 0;
     
-    public ProxyChan(Class<?> targetClass, Object targetObject, Method targetMethod, MethodProxy methodProxy, Object[] methodParams,
-                     List<Proxy> proxyList) {
+    public ProxyChain(Class<?> targetClass, Object targetObject,
+                      Method targetMethod, MethodProxy methodProxy,
+                      Object[] methodParams, List<Proxy> proxyList) {
         this.targetClass = targetClass;
         this.methodParams = methodParams;
         this.targetObject = targetObject;
