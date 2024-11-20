@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="dist">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/spring-ejbimpl-0.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/spring-full-0.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/spring-context-0.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/spring-jdbc-0.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/spring-core-0.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/spring-web-0.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
